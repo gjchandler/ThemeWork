@@ -1,0 +1,620 @@
+/* Universal styles here did this update?*/
+body{
+	font-family: $main-font;
+}
+
+h1{
+	font-size: 38px;
+	border-bottom: solid 5px #a3d0e8;
+	padding-bottom: 10px;
+}
+
+h2{
+	font-size: 4rem;
+}
+
+h3{
+	font-size:2rem;
+}
+
+h1, h2, h3, h4, h5 {
+	color: $primary;
+	font-weight: 300;
+}
+
+p{
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 25px;
+	color: #4c4c4e;
+}
+
+nav{
+	background: #fefefe;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…BoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
+	background: -moz-linear-gradient(top,#fefefe 24%,#e5e5e4 100%);
+	background: -webkit-gradient(linear,left top,left bottom,color-stop(24%,#fefefe),color-stop(100%,#e5e5e4));
+	background: -webkit-linear-gradient(top,#fefefe 24%,#e5e5e4 100%);
+	background: -o-linear-gradient(top,#fefefe 24%,#e5e5e4 100%);
+	background: -ms-linear-gradient(top,#fefefe 24%,#e5e5e4 100%);
+	background: linear-gradient(to bottom,#fefefe 24%,#e5e5e4 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fefefe',endColorstr='#e5e5e4',GradientType=0);
+	padding: 18px 0;
+
+	font-size:1.1rem;
+
+} 
+
+.navbar{
+	padding-bottom:18px;
+}
+
+
+.search-col-inner{
+
+	
+}
+
+/* Dropdown Button */
+.dropbtn {
+	background-color: transparent;
+	color: $primary;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+
+	.fa{
+		-webkit-transform: rotate(90deg);
+		-moz-transform: rotate(90deg);
+		-o-transform: rotate(90deg);
+		-ms-transform: rotate(90deg);
+		transform: rotate(90deg);
+	}
+}
+
+/* Featured image wrapper region */
+.fi-wrap{
+	background-size:cover;
+	height:222px;
+	-webkit-box-shadow: inset 0 20px 20px -20px rgba(0,0,0,0.5);
+    -moz-box-shadow: inset 0 20px 20px -20px rgba(0,0,0,0.5);
+    box-shadow: inset 0 20px 20px -20px rgba(0,0,0,0.5);
+        background-position: center;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+	position: relative;
+	display: inline-block;
+	float:right;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: $primary;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+	z-index: 1;
+}
+
+.navbar{
+
+	.navbar-toggler-icon {
+		background-image: url(../images/burger.svg);
+	}
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	color:#fff;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: $second}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+	background-color: transparent;
+
+}
+
+.search-col-inner{
+	background-color: #eaeaea;
+	border: 1px solid #eaeaea;
+	-moz-border-radius: 0 0 10px 10px;
+	-webkit-border-radius: 0 0 10px 10px;
+	border-radius: 0 0 10px 10px;
+	padding: 10px 0px 10px 15px;
+
+	button[type=submit]{
+		background-color: transparent;
+		border: none;
+		position: relative;
+		left: -35px;
+		top: 5px;
+	}
+}
+
+.foot-nav-container{
+	background-color:$primary;
+	padding-bottom:0;
+
+	#nav-footer{
+		width:100%;
+
+		ul{
+			padding: 0;
+			margin: 0;
+			list-style: none;
+		}
+
+		nav{
+			background:transparent;
+
+			a{
+				color:#fff;
+			}
+
+
+			#footer-menu > li {
+				font-weight:700;
+				font-size:1.5rem;
+
+				li{
+					line-height:100%;
+
+					a{
+						font-size:1rem;
+						color:$sixth;
+					}
+				}
+			}
+
+			
+
+		}
+	}
+
+	.social-bar{
+		background-color:$ninth;
+		color:#fff;
+
+		a{
+			color:$sixth;
+		} 
+	}
+}  
+
+/* Editor classes go here */
+.rounded-top-left-bottom-right, .rounded-top-left-bottom-right > div{
+	-moz-border-radius: 20px 0px 20px 0px;
+	-webkit-border-radius: 20px 0px 20px 0px;
+	border-radius: 20px 0px 20px 0px;
+	overflow: hidden;
+}
+
+.rounded-top-right-bottom-left, .rounded-top-right-bottom-left > div{
+	-moz-border-radius: 0 20px 0 20px;
+	-webkit-border-radius: 0 20px 0 20px;
+	border-radius: 0 20px 0 20px;
+	overflow: hidden;
+}
+
+.rounded-top-left{
+	-moz-border-radius: 20px 0 0 0;
+	-webkit-border-radius: 20px 0 0 0;
+	border-radius: 20px 0 0 0;
+}  
+
+.rounded-bottom-left-bottom-right, .rounded-bottom-left-bottom-right > div{
+	-moz-border-radius: 0px 0px 20px 20px;
+	-webkit-border-radius: 0px 0px 20px 20px;
+	border-radius: 0px 0px 20px 20px;
+	overflow: hidden;
+}
+.icon-btn.tall{
+.fl-node-content{
+
+		.fl-button-left{
+
+			a{
+				min-height:100px;
+				    -webkit-box-align: center!important;
+    -ms-flex-align: center!important;
+    align-items: center!important;
+    display:flex;
+			}
+		}
+	}
+}
+.icon-btn{
+	font-size:2rem;
+	text-align:left;
+	position:relative;
+	text-align:left;
+
+
+	.fl-node-content{
+
+		.fl-button-left{
+
+			a{
+				text-align:left !important;	
+				
+			}
+		}
+	}
+
+	.fl-button-text{
+		font-size:1.5rem; 
+		font-weight:700;
+		text-align:left;
+		line-height: initial;
+	}
+
+	.fl-button-icon{
+		position:absolute;
+		right:10px;
+		top:30px;
+	} 
+
+	.dashicons, .dashicons-before:before{
+		font-size:4rem;
+		height: 4rem;
+		width: 4rem;
+		color:#417039;
+	}
+}
+
+.accordion-science{
+
+	.fl-accordion-button-label{
+		color:$primary;
+	}
+
+	.fl-accordion-item{
+		background-color: #e5e5e5;
+	}
+}
+
+
+.featured-col{
+
+	p{
+		font-size:1.5rem;
+		line-height:inherit;
+	}
+}
+
+.support-col{
+
+	p{
+		font-size:1rem;
+	}
+}
+
+.fl-post-feed-header{
+
+	h2{
+		font-size:1rem;
+	}
+}
+
+.fl-photo-caption{
+	text-align:left;
+	font-size:1.25rem;
+}
+
+.produce-grid{
+
+	.fl-post-grid-post{
+		display: -webkit-box!important;
+
+		display: -ms-flexbox!important;
+		display: flex!important;
+		-webkit-box-orient: horizontal!important;
+		-webkit-box-direction: normal!important;
+		-ms-flex-direction: row!important;
+		flex-direction: row!important;
+	}
+}
+
+.fl-callout-content{
+
+	font-weight:700;
+	font-style:italic;
+
+	.fl-callout-title{
+		font-weight: 700;
+		color:#fff;
+	}
+
+	a{
+		color:$twelfth;
+		font-weight:700;
+	}
+}
+
+.slant-orange{
+	height: 0px;
+	display:inline-block;
+	border-left: 0px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 75px solid $tenth;
+	padding: 0 0 1.5rem 0;
+}
+
+.slant-parimary{
+	height: 0px;
+	display:inline-block;
+	border-left: 0px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 75px solid $primary;
+	padding: 0 0 1.5rem 0;
+}
+
+.slant-green{
+	height: 0px;
+	display:inline-block;
+	border-left: 0px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 75px solid #44963b;
+	padding: 0 0 1.5rem 0;
+}
+
+.white-text{ 
+	p,h1,h2,h3,h4,h5,h6,a{
+		color:#fff !important;
+	}
+}
+
+.primary-wrap{
+	background-color:$primary;
+}
+
+.l-blue-wrap{
+	background-color:$eleventh;
+}
+
+.green-wrap{
+	background-color:#72af68;
+}
+
+.gray-wrap{ 
+	background-color:#d3d3d3;
+}
+
+.dotted-bottom-border{
+
+	.fl-post-grid-post{
+		border-bottom:1px dotted #d8d8d8;
+	}
+}
+
+.r-margin{
+	margin-right:150px;
+}
+
+.r-margin-40{
+	margin-right:40%;
+}
+
+.top-margin-20{
+	margin-top:20px;
+}
+
+.scientist-bg{
+	background-image: url(http://briarwoodcs.wpengine.com/wp-content/uploads/2018/04/callout-science_0.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: scroll;
+	background-size: cover;
+}
+
+.seed-bg{
+	background-image: url(http://briarwoodcs.wpengine.com/wp-content/uploads/2018/04/callout-company.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: scroll;
+	background-size: cover;
+}
+
+/* General form CSS */
+label { color:white;
+}
+li {list-style-type:none;
+}
+form input, form textarea, form button {
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	width: 100%;
+}
+form input[type="text"], form input[type="email"] {
+	height: 40px;
+}
+form button, form input[type="submit"] {
+	background-color: #72af68;
+	color: #ffffff;
+	-o-transition: background-color 0.25s ease-in-out;
+	transition: background-color 0.25s ease-in-out;
+	-moz-transition: background-color 0.25s ease-in-out;
+	-webkit-transition: background-color 0.25s ease-in-out;
+	border: none;
+	padding: 10px 20px;
+}
+.gform_wrapper .gform_footer {
+	padding: 16px 0 10px;
+	margin: 16px 0 0;
+	clear: both;
+	width: 100%;
+} 
+
+
+/* Big screen stuff */
+@media print,screen and (min-width: 64em) {
+	#main-menu{
+		float:right;
+	} 
+
+	nav{
+
+
+		.active a{
+			font-weight:900;
+			border-bottom: 3px solid $sixth;
+		}
+
+		a:hover{
+
+		}
+	}
+
+
+	#navFooter{
+
+		ul{
+
+
+
+			li{
+
+
+				ul{
+					display:block;
+				}
+
+				li{
+					width:100%;
+					display:block;
+					float:none;
+				}
+			}
+		}
+	}
+
+}
+
+/* Medium screen stuff */
+@media print,screen and (min-width: 40em) and (max-width: 63.875em) {
+	#main-menu{
+		float:right;
+	}
+}
+
+/* Medium and down */
+
+@media print,screen and (max-width: 63.875em) {
+.fi-wrap{
+	display:none;
+}
+
+	.lang-drop{
+
+		.dropdown{
+			display:block;
+			float:none;
+
+			.dropdown-content{
+				width:100%;
+				text-align:center;
+			}
+
+			.dropbtn{
+				display:block;
+				text-align:center;
+				margin:0 auto;
+				width:100%;
+				background-color:$primary;
+				color:#fff;
+
+				.fa{
+					color:$sixth;
+				} 
+			}
+		}
+	}
+
+
+	.navbar{
+		padding:40px 0;
+
+		#navbarNavDropdown{
+			padding-top:40px;
+			margin-bottom:-40px;
+
+			.search-col{
+				background-color:$primary-alt;
+				padding-bottom:20px;
+			}
+		}
+
+		#main-menu{
+			background-color:$primary-alt;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+   /* You can set flex-wrap and
+   flex-direction individually */
+   flex-direction: row;
+   flex-wrap: wrap;
+   /* Or do it all in one line
+   with flex flow */
+   flex-flow: row wrap;
+   /* tweak where items line
+      up on the row
+      valid values are: flex-start,
+      flex-end, space-between,
+      space-around, stretch */
+      align-content: flex-end;
+
+
+
+      li{
+      	width:49.75%;
+      	text-align:center;
+      	padding: 30px 0;
+      	background-color:$primary;
+      	margin:.1%;
+
+
+      	a{
+      		color:#fff;
+      		font-size:1.5rem;
+      	}  
+      }
+
+      .active{
+      	background-color:$seventh;
+      	border-bottom:none;
+      }
+
+
+  }
+}
+
+.navbar-toggler{
+	font-size:2rem;
+}
+
+.search-col-inner{
+	background-color:transparent;
+	border:none;
+}
+}
+
+/* Small screen stuff */
+@media screen and (max-width: 39.9375em) {
+
+}
