@@ -36,12 +36,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 					<div class="col-sm-12 col-md-3 col-lg-3 search-col d-none d-md-block">
 						<div class="input-group stylish-input-group search-col-inner">
-							<input type="text" class="form-control"  placeholder="Search" >
+							<!-- <input type="text" class="form-control"  placeholder="Search" >
 							<span class="input-group-addon">
 								<button type="submit">
 									<i class="fa fa-search" aria-hidden="true"></i>
 								</button>  
-							</span>
+							</span> -->
+							
+<?php get_search_form() ?>
 						</div>
 					</div>
 

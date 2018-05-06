@@ -10975,12 +10975,24 @@ nav {
   border: 1px solid #eaeaea;
   border-radius: 0 0 10px 10px;
   padding: 10px 0px 10px 15px; }
-  .search-col-inner button[type=submit] {
+  .search-col-inner input[type=submit] {
     background-color: transparent;
     border: none;
     position: relative;
-    left: -35px;
-    top: 5px; }
+    top: 5px;
+    opacity: 0; }
+  .search-col-inner .input-group-append {
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    width: 50px;
+    height: 25px;
+    background-image: url(http://briarwoodcs.wpengine.com/wp-content/uploads/2018/05/glass.png);
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat; }
+  .search-col-inner .assistive-text {
+    display: none; }
 
 .foot-nav-container {
   background-color: #0069aa;

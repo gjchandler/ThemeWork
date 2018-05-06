@@ -16,13 +16,41 @@ $container   = get_theme_mod( 'understrap_container_type' );
 
 ?>
 
+	
+	<?php 
+$image = wp_get_attachment_url( get_post_thumbnail_id($post->ID));
+?>
+
+	<div class="fi-wrap" style="background-image:url(<?php echo $image; ?>)">
+		
+		
+<?php 
+/*$image = wp_get_attachment_url( get_post_thumbnail_id($post->ID));
+echo $image;
+
+echo "hi there";
+
+$custom = get_post_custom();
+
+foreach($custom as $key => $value) {
+     echo $key.': '.$value.'<br />';
+}
+
+if(isset($custom['price'])) {
+    echo 'Price: '.$custom['price'];
+}*/
+?>
+
+	</div>
+
 <div class="wrapper" id="page-wrapper">
 
-	
+
+
 
 	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
 
-		<div class="row">does this do anything?
+		<div class="row">
 
 			<!-- Do the left sidebar check -->
 			<?php get_template_part( 'global-templates/left-sidebar-check' ); ?>
