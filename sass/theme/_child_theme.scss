@@ -103,6 +103,18 @@ background-image: url(../images/banner-yellow.png);
       padding: 1em 1em 1em 6em;
 
       }
+
+      .Green{
+background-image: url(../images/banner-green.png);
+    overflow: hidden;
+      padding: 1em 1em 1em 6em;
+      }
+
+      .LightBlue{
+      	background-image: url(../images/banner-light-blue.png);
+    overflow: hidden;
+      padding: 1em 1em 1em 6em;
+      }
         
 
 
@@ -585,11 +597,23 @@ form button, form input[type="submit"] {
 	#main-menu{
 		float:right;
 	}
-}
+} 
 
 /* Medium and down */
 
 @media print,screen and (max-width: 63.875em) {
+h2{
+	font-size: 2.5rem;
+	border-bottom: solid 5px #a3d0e8;
+	padding-bottom: 10px;
+}
+
+.fl-post-feed-header{
+	h2{
+		border-bottom:none;
+	}
+}
+
 .fi-wrap{
 	display:none;
 }
