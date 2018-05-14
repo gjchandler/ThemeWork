@@ -7,4 +7,4 @@ jQuery('.vid-feed').append(
 //Initialize popover.js
 jQuery(function () {
   jQuery('[data-toggle="popover"]').popover()
-})
+})   
