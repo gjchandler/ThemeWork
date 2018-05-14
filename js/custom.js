@@ -1,4 +1,4 @@
-//Add read more button to video section  12345
+//Add read more button to video section  1234512
 console.log('hello world!');
 jQuery('.vid-feed').append(
 "<div class=\"read-more\"> <a href=\"/videos\">read more</a></div>"
