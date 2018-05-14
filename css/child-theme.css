@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:700");
 @font-face {
   font-family: 'FontAwesome';
   src: url("../fonts/fontawesome-webfont.eot?v=4.7.0");
@@ -10908,9 +10909,21 @@ nav {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fefefe',endColorstr='#e5e5e4',GradientType=0);
   padding: 18px 0;
   font-size: 1.1rem; }
+  nav #main-menu li a {
+    padding-left: 1rem;
+    padding-right: 1rem; }
 
 .navbar {
   padding-bottom: 18px; }
+
+.hover-expand img {
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
+  width: 100%; }
+
+.hover-expand img:hover {
+  width: 105%;
+  max-width: unset; }
 
 /* Dropdown Button */
 .dropbtn {
@@ -10933,7 +10946,7 @@ nav {
   position: relative; }
   .fi-wrap .banner {
     position: absolute;
-    right: 15px;
+    right: 10px;
     height: 222px;
     -webkit-box-align: center !important;
     -ms-flex-align: center !important;
@@ -10948,7 +10961,12 @@ nav {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    color: #fff; }
+    color: #fff;
+    font-family: "Roboto Condensed", sans-serif;
+    -webkit-transform: scaleX(0.85);
+            transform: scaleX(0.85); }
+    .fi-wrap .banner span {
+      margin: 0 3rem; }
   .fi-wrap .Yellow {
     background-image: url(../images/banner-yellow.png);
     overflow: hidden;
@@ -11024,6 +11042,8 @@ html body div .gform_wrapper input[type=submit] {
     position: relative;
     top: 5px;
     opacity: 0; }
+  .search-col-inner input {
+    border: none; }
   .search-col-inner .input-group-append {
     position: absolute;
     right: 10px;
@@ -11039,7 +11059,7 @@ html body div .gform_wrapper input[type=submit] {
     display: none; }
 
 .foot-nav-container {
-  background-color: #0069aa;
+  background-color: #014873;
   padding-bottom: 0; }
   .foot-nav-container #nav-footer {
     width: 100%; }
@@ -11053,7 +11073,8 @@ html body div .gform_wrapper input[type=submit] {
         color: #fff; }
       .foot-nav-container #nav-footer nav #footer-menu > li {
         font-weight: 700;
-        font-size: 1.5rem; }
+        font-size: 1.5rem;
+        line-height: 3.5rem; }
         .foot-nav-container #nav-footer nav #footer-menu > li li {
           line-height: 100%; }
           .foot-nav-container #nav-footer nav #footer-menu > li li a {
@@ -11255,12 +11276,38 @@ form button, form input[type="submit"] {
   clear: both;
   width: 100%; }
 
+.vid-feed {
+  position: relative; }
+  .vid-feed p {
+    font-size: .7rem;
+    line-height: 1rem; }
+  .vid-feed .read-more {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 8px;
+    background-color: #5c8d53;
+    border-radius: 0; }
+    .vid-feed .read-more a {
+      color: #fff; }
+  .vid-feed .fl-post-feed-header {
+    margin-bottom: 0; }
+    .vid-feed .fl-post-feed-header a {
+      font-size: .85rem;
+      color: #5e5e5e;
+      font-weight: 700; }
+
 /* Big screen stuff */
 @media print, screen and (min-width: 64em) {
   #main-menu {
     float: right; }
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-left: 1rem;
+    padding-right: 1rem; }
   nav .active a {
     font-weight: 900;
+    border-bottom: 3px solid #a3d0e8; }
+  nav a:hover {
     border-bottom: 3px solid #a3d0e8; }
   #navFooter ul li ul {
     display: block; }

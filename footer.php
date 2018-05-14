@@ -90,6 +90,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 </div><!-- #page we need this extra closing tag here -->
 
+<script src="/wp-content/themes/agrinos/js/custom.js"></script>
+
 <?php wp_footer(); ?>
 
 </body>
