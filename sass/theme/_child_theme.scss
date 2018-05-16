@@ -29,6 +29,12 @@ p{
 	color: #4c4c4e;
 }
 
+.hidden{
+	display:none;
+}
+
+#wrapper-navbar{
+
 nav{
 	background: #fefefe;
 	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…BoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
@@ -50,6 +56,7 @@ nav{
 			a{
 				padding-left:1rem;
 				padding-right:1rem; 
+				
 			}
 
 
@@ -57,6 +64,7 @@ nav{
 	}
 
 } 
+}
 
 .navbar{
 	padding-bottom:18px;
@@ -152,6 +160,28 @@ nav{
 
 
 
+}
+
+.single-post{
+
+	table{
+		margin:1rem 2rem 1rem 0;
+	}
+
+	.entry-meta{
+		margin-bottom:2rem;
+	}
+
+	.byline{
+		display:none;
+	}
+
+	.entry-content{
+
+		p{
+			line-height:200%;
+		}
+	}
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -261,6 +291,22 @@ html body div .gform_wrapper input[type=submit]{
 	}
 }
 
+.group-blog{
+
+	.post{
+a, h2{
+color:#4c4c4e;
+}
+	}
+
+	.fl-post-grid-title{
+
+		a{
+			font-weight:700;
+		} 
+	}
+}
+
 .foot-nav-container{
 	background-color:$thirteenth;
 	padding-bottom:0;
@@ -281,11 +327,11 @@ html body div .gform_wrapper input[type=submit]{
 				color:#fff;
 			}
 
- 
+
 			#footer-menu > li {
 				font-weight:700;
 				font-size:1.5rem;
-					line-height:3.5rem;
+				line-height:3.5rem;
 
 
 				li{
@@ -312,6 +358,29 @@ html body div .gform_wrapper input[type=submit]{
 		} 
 	}
 }  
+
+.ag-popover{
+	background-color:#d3d3d3;
+
+
+
+	img{
+		padding-right:1rem;
+	}
+}
+
+.popover-body{
+	ul{
+		padding-left:0;
+
+	li{
+		    border-left: 10px solid #72af68;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}	 
+	}
+}
 
 /* Editor classes go here */
 .rounded-top-left-bottom-right, .rounded-top-left-bottom-right > div{
@@ -340,7 +409,9 @@ html body div .gform_wrapper input[type=submit]{
 	border-radius: 0px 0px 20px 20px;
 	overflow: hidden;
 }
+
 .icon-btn.tall{
+
 	.fl-node-content{
 
 		.fl-button-left{
@@ -364,6 +435,27 @@ html body div .gform_wrapper input[type=submit]{
 		}
 	}
 }
+
+.fl-rich-text{
+ul{
+		padding-left:0;
+
+	li{
+		    border-left: 10px solid #72af68;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}	 
+	}
+}
+
+.fl-rich-text{
+
+	h2{
+		font-size:2rem;
+	}
+}
+
 .icon-btn{
 	font-size:2rem;
 	text-align:left;
@@ -453,7 +545,64 @@ html body div .gform_wrapper input[type=submit]{
 		-webkit-box-direction: normal!important;
 		-ms-flex-direction: row!important;
 		flex-direction: row!important;
+
+		padding:1rem 0;
 	}
+}
+
+.team-grid{
+
+.fl-post-grid-post{
+position:relative;
+border:none;
+		padding:1rem 0;
+
+		h4{
+			font-size:1rem;
+		}
+
+		p{
+			font-size:.9rem;
+		}
+
+		.main-info{
+			height:92px;
+			padding-left:90px;
+		}
+
+		.fl-post-grid-title{
+			position:absolute;
+			top:10px;
+			left:98px;
+			font-size:1.5rem;
+		}
+
+		.fl-post-grid-content{
+padding-top:2rem;
+		}
+
+		.btn{
+			display:none;
+		}
+
+		.fl-post-image{
+			    position: absolute;
+    left: 0;
+		}
+
+		img{
+			width:78px !important;
+			height:78px !important;
+			border-radius:5px;
+			max-width:unset!important;
+
+		}
+
+		.fp-post-grid-text{
+			padding-top:0;
+		}
+	}
+ 
 }
 
 .fl-callout-content{
@@ -479,6 +628,10 @@ html body div .gform_wrapper input[type=submit]{
 	border-right: 10px solid transparent;
 	border-bottom: 75px solid $tenth;
 	padding: 0 0 1.5rem 0;
+
+	h2{
+		font-size:4rem;
+	}
 }
 
 .slant-parimary{
@@ -488,6 +641,10 @@ html body div .gform_wrapper input[type=submit]{
 	border-right: 10px solid transparent;
 	border-bottom: 75px solid $primary;
 	padding: 0 0 1.5rem 0;
+
+	h2{
+		font-size:4rem;
+	}
 }
 
 .slant-green{
@@ -497,6 +654,10 @@ html body div .gform_wrapper input[type=submit]{
 	border-right: 10px solid transparent;
 	border-bottom: 75px solid #44963b;
 	padding: 0 0 1.5rem 0;
+
+	h2{
+		font-size:4rem;
+	}
 }
 
 .white-text{ 
@@ -588,6 +749,26 @@ form button, form input[type="submit"] {
 } 
 
 
+ html body .blog-loop{
+
+.fl-post-column{
+	border-bottom:2px dotted #dadada;
+	padding-bottom:1rem;
+}
+
+.understrap-read-more-link{
+	background-color:transparent;
+	color:#72af68;
+	border:none;
+padding:0;
+	a{
+
+	}
+}
+
+	}
+
+
 .vid-feed{
 	position:relative;
 
@@ -600,24 +781,53 @@ form button, form input[type="submit"] {
 		position:absolute;
 		right:0;
 		bottom:0;
-		    padding: 8px;
-		    background-color:#5c8d53;
-		    border-radius:0;
+		padding: 8px;
+		background-color:#5c8d53;
+		border-radius:0;
 
-		    a{
-		    	color:#fff;
-		    }
+		a{
+			color:#fff;
+		}
 	}
 
 	.fl-post-feed-header{
-margin-bottom:0;
+		margin-bottom:0;
 
-a{
-	font-size:.85rem;
-	    color: #5e5e5e;
-	    font-weight:700;
+		a{
+			font-size:.85rem;
+			color: #5e5e5e;
+			font-weight:700;
+		}
 	}
 }
+
+/* Table styling */
+
+.styled-table table tr:nth-child(even) {
+    background-color: #dfedf4;
+}
+
+.styled-tabletable tr > td {
+    border-right: 2px solid #fff;
+}
+.styled-table a {
+    color: #72af68;
+    font-weight: bold;
+    opacity: 1;
+    -o-transition: opacity 0.25s ease-in-out;
+    transition: opacity 0.25s ease-in-out;
+    -moz-transition: opacity 0.25s ease-in-out;
+    -webkit-transition: opacity 0.25s ease-in-out;
+}
+.styled-table table td, table th {
+    padding: 10px;
+    text-align: center;
+}
+.styled-table tbody {
+    border-top: 1px solid #ccc;
+}
+.styled-table table tr:nth-child(odd) {
+    background-color: #f7f7f7;
 }
 
 /* Big screen stuff */
@@ -625,7 +835,9 @@ a{
 	#main-menu{
 		float:right;
 
-
+		a{
+		
+		}
 	} 
 
 
@@ -634,7 +846,7 @@ a{
 		padding-right:1rem; 
 	}
 
-
+ 
 	nav{
 
 
@@ -646,6 +858,10 @@ a{
 		a:hover{
 			border-bottom: 3px solid $sixth;
 		}
+
+		a{
+			border-bottom: 3px solid transparent;
+		} 
 	}
 
 

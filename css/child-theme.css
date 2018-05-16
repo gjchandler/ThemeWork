@@ -151,7 +151,7 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -ms-overflow-style: scrollbar;
-  -webkit-tap-highlight-color: transparent; }
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
 @-ms-viewport {
   width: device-width; }
@@ -10901,7 +10901,10 @@ p {
   line-height: 25px;
   color: #4c4c4e; }
 
-nav {
+.hidden {
+  display: none; }
+
+#wrapper-navbar nav {
   background: #fefefe;
   background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…BoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(24%, #fefefe), to(#e5e5e4));
@@ -10909,7 +10912,7 @@ nav {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fefefe',endColorstr='#e5e5e4',GradientType=0);
   padding: 18px 0;
   font-size: 1.1rem; }
-  nav #main-menu li a {
+  #wrapper-navbar nav #main-menu li a {
     padding-left: 1rem;
     padding-right: 1rem; }
 
@@ -10979,6 +10982,18 @@ nav {
     background-image: url(../images/banner-light-blue.png);
     overflow: hidden;
     padding: 1em 1em 1em 6em; }
+
+.single-post table {
+  margin: 1rem 2rem 1rem 0; }
+
+.single-post .entry-meta {
+  margin-bottom: 2rem; }
+
+.single-post .byline {
+  display: none; }
+
+.single-post .entry-content p {
+  line-height: 200%; }
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
@@ -11058,6 +11073,12 @@ html body div .gform_wrapper input[type=submit] {
   .search-col-inner .assistive-text {
     display: none; }
 
+.group-blog .post a, .group-blog .post h2 {
+  color: #4c4c4e; }
+
+.group-blog .fl-post-grid-title a {
+  font-weight: 700; }
+
 .foot-nav-container {
   background-color: #014873;
   padding-bottom: 0; }
@@ -11085,6 +11106,19 @@ html body div .gform_wrapper input[type=submit] {
     color: #fff; }
     .foot-nav-container .social-bar a {
       color: #a3d0e8; }
+
+.ag-popover {
+  background-color: #d3d3d3; }
+  .ag-popover img {
+    padding-right: 1rem; }
+
+.popover-body ul {
+  padding-left: 0; }
+  .popover-body ul li {
+    border-left: 10px solid #72af68;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px; }
 
 /* Editor classes go here */
 .rounded-top-left-bottom-right, .rounded-top-left-bottom-right > div {
@@ -11120,6 +11154,17 @@ html body div .gform_wrapper input[type=submit] {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+
+.fl-rich-text ul {
+  padding-left: 0; }
+  .fl-rich-text ul li {
+    border-left: 10px solid #72af68;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px; }
+
+.fl-rich-text h2 {
+  font-size: 2rem; }
 
 .icon-btn {
   font-size: 2rem;
@@ -11170,7 +11215,40 @@ html body div .gform_wrapper input[type=submit] {
   -webkit-box-orient: horizontal !important;
   -webkit-box-direction: normal !important;
   -ms-flex-direction: row !important;
-  flex-direction: row !important; }
+  flex-direction: row !important;
+  padding: 1rem 0; }
+
+.team-grid .fl-post-grid-post {
+  position: relative;
+  border: none;
+  padding: 1rem 0; }
+  .team-grid .fl-post-grid-post h4 {
+    font-size: 1rem; }
+  .team-grid .fl-post-grid-post p {
+    font-size: .9rem; }
+  .team-grid .fl-post-grid-post .main-info {
+    height: 92px;
+    padding-left: 90px; }
+  .team-grid .fl-post-grid-post .fl-post-grid-title {
+    position: absolute;
+    top: 10px;
+    left: 98px;
+    font-size: 1.5rem; }
+  .team-grid .fl-post-grid-post .fl-post-grid-content {
+    padding-top: 2rem; }
+  .team-grid .fl-post-grid-post .btn,
+  .team-grid .fl-post-grid-post .wpcf7 input[type=submit], .wpcf7 .team-grid .fl-post-grid-post input[type=submit] {
+    display: none; }
+  .team-grid .fl-post-grid-post .fl-post-image {
+    position: absolute;
+    left: 0; }
+  .team-grid .fl-post-grid-post img {
+    width: 78px !important;
+    height: 78px !important;
+    border-radius: 5px;
+    max-width: unset !important; }
+  .team-grid .fl-post-grid-post .fp-post-grid-text {
+    padding-top: 0; }
 
 .fl-callout-content {
   font-weight: 700;
@@ -11189,6 +11267,8 @@ html body div .gform_wrapper input[type=submit] {
   border-right: 10px solid transparent;
   border-bottom: 75px solid #dea61b;
   padding: 0 0 1.5rem 0; }
+  .slant-orange h2 {
+    font-size: 4rem; }
 
 .slant-parimary {
   height: 0px;
@@ -11197,6 +11277,8 @@ html body div .gform_wrapper input[type=submit] {
   border-right: 10px solid transparent;
   border-bottom: 75px solid #0069aa;
   padding: 0 0 1.5rem 0; }
+  .slant-parimary h2 {
+    font-size: 4rem; }
 
 .slant-green {
   height: 0px;
@@ -11205,6 +11287,8 @@ html body div .gform_wrapper input[type=submit] {
   border-right: 10px solid transparent;
   border-bottom: 75px solid #44963b;
   padding: 0 0 1.5rem 0; }
+  .slant-green h2 {
+    font-size: 4rem; }
 
 .white-text p, .white-text h1, .white-text h2, .white-text h3, .white-text h4, .white-text h5, .white-text h6, .white-text a {
   color: #fff !important; }
@@ -11276,6 +11360,16 @@ form button, form input[type="submit"] {
   clear: both;
   width: 100%; }
 
+html body .blog-loop .fl-post-column {
+  border-bottom: 2px dotted #dadada;
+  padding-bottom: 1rem; }
+
+html body .blog-loop .understrap-read-more-link {
+  background-color: transparent;
+  color: #72af68;
+  border: none;
+  padding: 0; }
+
 .vid-feed {
   position: relative; }
   .vid-feed p {
@@ -11297,6 +11391,31 @@ form button, form input[type="submit"] {
       color: #5e5e5e;
       font-weight: 700; }
 
+/* Table styling */
+.styled-table table tr:nth-child(even) {
+  background-color: #dfedf4; }
+
+.styled-tabletable tr > td {
+  border-right: 2px solid #fff; }
+
+.styled-table a {
+  color: #72af68;
+  font-weight: bold;
+  opacity: 1;
+  transition: opacity 0.25s ease-in-out;
+  -moz-transition: opacity 0.25s ease-in-out;
+  -webkit-transition: opacity 0.25s ease-in-out; }
+
+.styled-table table td, table th {
+  padding: 10px;
+  text-align: center; }
+
+.styled-table tbody {
+  border-top: 1px solid #ccc; }
+
+.styled-table table tr:nth-child(odd) {
+  background-color: #f7f7f7; }
+
 /* Big screen stuff */
 @media print, screen and (min-width: 64em) {
   #main-menu {
@@ -11309,6 +11428,8 @@ form button, form input[type="submit"] {
     border-bottom: 3px solid #a3d0e8; }
   nav a:hover {
     border-bottom: 3px solid #a3d0e8; }
+  nav a {
+    border-bottom: 3px solid transparent; }
   #navFooter ul li ul {
     display: block; }
   #navFooter ul li li {
