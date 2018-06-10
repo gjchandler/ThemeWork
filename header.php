@@ -34,34 +34,19 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<div class="row flex-row-reverse">
 
 
+					<!-- Search Function
 					<div class="col-sm-12 col-md-3 col-lg-3 search-col d-none d-md-block">
-						<div class="input-group stylish-input-group search-col-inner">
+						<div class="input-group stylish-input-group search-col-inner">   -->
 							<!-- <input type="text" class="form-control"  placeholder="Search" >
 							<span class="input-group-addon">
 								<button type="submit">
 									<i class="fa fa-search" aria-hidden="true"></i>
 								</button>  
-							</span> -->
+							</span> --><!-- Continue search function, ingnore previous comment
 							
 <?php get_search_form() ?>
 						</div>
-					</div>
-
-					<div class="col-sm-12 col-md-2 col-lg-2 lang-drop">
-						<div class="dropdown">
-							<button class="dropbtn">USA <i class="fa fa-play" aria-hidden="true"></i></button>
-							<div class="dropdown-content">
-								<a href="http://br.agrinos.com" title="Agrinos Brazil">Brazil</a>
-								<a href="http://cn.agrinos.com" title="Agrinos China">China</a>
-								<a href="http://in.agrinos.com" title="Agrinos India">India</a>
-								<a href="http://mx.agrinos.com" title="Agrinos Mexico">Mexico</a>
-								<!-- <li><a href="http://agrinos.ru" title="Agrinos Russia">Russia</a></li> -->
-								<a href="http://sea.agrinos.com" title="Agrinos Southeast Asia">Southeast Asia</a>
-								<a href="http://ua.agrinos.com" title="Agrinos Ukraine">Ukraine</a>
-								<a href="http://agrinos.com" title="Agrinos USA">USA</a>
-							</div>
-						</div>
-					</div>
+					</div>-->
 
 				</div>
 			</div>
