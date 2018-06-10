@@ -57,6 +57,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						</div>
 					</div>
 				</div>
+				</div>
 				<div class="social-bar">
 					<div class="container">
 						<div>

@@ -10905,11 +10905,10 @@ p {
   display: none; }
 
 #wrapper-navbar nav {
-  background: #fefefe;
-  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…BoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(24%, #fefefe), to(#e5e5e4));
-  background: linear-gradient(to bottom, #fefefe 24%, #e5e5e4 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fefefe',endColorstr='#e5e5e4',GradientType=0);
+  background: #e8e8e8;
+  background: -webkit-gradient(linear, left top, right top, from(#e8e8e8), color-stop(51%, white), to(#e8e8e8));
+  background: linear-gradient(90deg, #e8e8e8 0%, white 51%, #e8e8e8 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e8e8e8",endColorstr="#e8e8e8",GradientType=1);
   padding: 18px 0;
   font-size: 1.1rem; }
   #wrapper-navbar nav #main-menu li a {
