@@ -41,9 +41,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 							<span class="input-group-addon">
 								<button type="submit">
 									<i class="fa fa-search" aria-hidden="true"></i>
-								</button>  
+								</button>
 							</span> --><!-- Continue search function, ingnore previous comment
-							
+
 <?php get_search_form() ?>
 						</div>
 					</div>-->
@@ -54,7 +54,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<a class="skip-link screen-reader-text sr-only" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
 
 			<nav class="navbar navbar-expand-lg">
-
+				<div class="navbar container"
 
 
 
@@ -73,12 +73,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<?php else : ?>
 
 						<a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?></a>
-						
+
 					<?php endif; ?>
 
 
 
-					
+
 					<?php } else {
 						the_custom_logo();
 					} ?><!-- end custom logo -->
@@ -108,7 +108,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							<span class="input-group-addon">
 								<button type="submit">
 									<i class="fa fa-search" aria-hidden="true"></i>
-								</button>  
+								</button>
 							</span>
 						</div>
 					</div>
@@ -124,7 +124,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<?php if ( 'container' == $container ) : ?>
 						</div><!-- .container -->
 					<?php endif; ?>
-
+				</div>
 				</nav><!-- .site-navigation -->
 
 			</div><!-- #wrapper-navbar end -->

@@ -16,7 +16,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
 
 ?>
 
-<?php 
+<?php
 $image = wp_get_attachment_url( get_post_thumbnail_id($post->ID));
 ?>
 
@@ -27,23 +27,20 @@ $image = wp_get_attachment_url( get_post_thumbnail_id($post->ID));
 
 
 	<div class="fi-wrap" style="background-image:url(<?php echo $image; ?>)">
-
 		<div class="container">
 
 			<div class="row">
 
 				<div class="col-12 fi-inner">
 
-					
 
-					
-					<div class="banner <?php echo do_shortcode('[ct id="ct_Banner_Col_checkbox_2925" property="title | description | value | link | image"]');  ?>">
+					<div class="banner">
 
-						<?php  echo get_post_meta( get_the_ID(), 'ct_Banner_Top_editor_0bd6', true );  ?>
+						<?php  echo get_post_meta( get_the_ID(), 'ct_Banner_Tex_editor_7231', true );  ?>
 
-						<?php echo do_shortcode('[ct id="ct_Banner_Bot_editor_c858" property="title | description | value | link | image"]'); ?>
+						<?php// echo do_shortcode('[ct id="ct_Banner_Tex_editor_7231" property="title | description | value | link | image"]'); ?>
 
-						<?php 
+						<?php
 					};
 					?>
 
@@ -53,7 +50,7 @@ $image = wp_get_attachment_url( get_post_thumbnail_id($post->ID));
 
 		</div>
 
-	</div>	
+	</div>
 
 </div>
 
