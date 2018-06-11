@@ -23,38 +23,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 				<footer>
 
-					<div class="container ">
-						<div class="row">
 
-							<div id="nav-footer" class="wrapper">
-								<div class="col-sm-12">
-									<div>
-										<nav>
-											<div>
-
-												<!-- The WordPress Menu goes here -->
-
-												<?php wp_nav_menu(
-													array(
-														'menu' 			=>  '3',
-														'container_class' => '',
-														'container_id'    => 'navFooter',
-														'menu_class'      => 'card-columns',
-														'fallback_cb'     => '',
-														'menu_id'         => 'footer-menu',
-													)
-													); ?>
-
-
-												</nav>
-
-											</div>
-										</div>
-									</div>
-
-								</div>
-							</div>
-						</div>
 					</div>
 				</div>
 				<div class="social-bar">
@@ -62,18 +31,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<div>
 							<div class="wrapper">
 								<div>
-							<!--
-									  <ul class="social">
-										  <li><a href="#" class="twitter" title="Follow us on Twitter"></a></li>
-										  <li><a href="#" class="facebook" title="Find us on Facebook"></a></li>
-										  <li><a href="#" class="linkedin" title="Connect with us on LinkedId"></a></li>
-										  <li><a href="#" class="rss" title="Subscribe to our RSS"></a></li>
-										  <li><a href="#" class="google" title="Google Plus"></a></li>
-										</ul>-->
+									<?php	echo do_shortcode('[fl_builder_insert_layout slug="footer-trio"]');?>
 									</div>
-									<div> <span class="copywrite">© <?php echo date(Y) ?> AgriSecure</span>
-									<br>
-									 <span class="legalLinks"><a href="/terms-of-use">Terms of Use</a> | <a href="/privacy-policy">Privacy Policy</a></span> </div>
 								</div>
 							</div>
 						</div>
@@ -97,4 +56,3 @@ $container = get_theme_mod( 'understrap_container_type' );
 </body>
 
 </html>
-

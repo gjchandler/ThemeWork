@@ -10882,7 +10882,6 @@ body {
 
 h1 {
   font-size: 38px;
-  border-bottom: solid 5px #a3d0e8;
   padding-bottom: 10px; }
 
 h2 {
@@ -10917,7 +10916,7 @@ p {
     padding-right: 1rem; }
 
 .navbar {
-  padding-bottom: 18px; }
+  padding-bottom: 0px; }
 
 .hover-expand img {
   -webkit-transition: all ease .5s;
@@ -11098,7 +11097,7 @@ html body div .gform_wrapper input[type=submit] {
   font-weight: 700; }
 
 .foot-nav-container {
-  background-color: #045431;
+  background-color: #ffffff;
   padding-bottom: 0; }
   .foot-nav-container #nav-footer {
     width: 100%; }
@@ -11120,10 +11119,12 @@ html body div .gform_wrapper input[type=submit] {
             font-size: 1rem;
             color: #a3d0e8; }
   .foot-nav-container .social-bar {
-    background-color: #004427;
-    color: #fff; }
+    background-color: #8b8d8b;
+    color: #fff;
+    -webkit-box-shadow: inset 0px 18px 60px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0px 18px 60px 0px rgba(0, 0, 0, 0.25); }
     .foot-nav-container .social-bar a {
-      color: #a3d0e8; }
+      color: #ffffff; }
 
 .ag-popover {
   background-color: #d3d3d3; }
@@ -11283,7 +11284,7 @@ html body div .gform_wrapper input[type=submit] {
   display: inline-block;
   border-left: 0px solid transparent;
   border-right: 10px solid transparent;
-  border-bottom: 75px solid #dea61b;
+  border-bottom: 75px solid #ffffff;
   padding: 0 0 1.5rem 0; }
   .slant-orange h2 {
     font-size: 4rem; }
@@ -11443,11 +11444,13 @@ html body .blog-loop .understrap-read-more-link {
     padding-right: 1rem; }
   nav .active a {
     font-weight: 900;
-    border-bottom: 3px solid #a3d0e8; }
+    border-bottom: 3px solid #419639; }
   nav a:hover {
-    border-bottom: 3px solid #a3d0e8; }
+    border-bottom: 3px solid #419639; }
   nav a {
     border-bottom: 3px solid transparent; }
+  a.navbar-brand.custom-logo-link {
+    border-bottom: none; }
   #navFooter ul li ul {
     display: block; }
   #navFooter ul li li {

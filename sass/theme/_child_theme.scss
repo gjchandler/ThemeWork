@@ -5,7 +5,6 @@ body{
 
 h1{
 	font-size: 38px;
-	border-bottom: solid 5px #a3d0e8;
 	padding-bottom: 10px;
 }
 
@@ -64,7 +63,7 @@ nav{
 }
 
 .navbar{
-	padding-bottom:18px;
+	padding-bottom:0px;
 }
 
 
@@ -329,7 +328,7 @@ color:#4c4c4e;
 }
 
 .foot-nav-container{
-	background-color:$thirteenth;
+	background-color:$tenth;
 	padding-bottom:0;
 
 	#nav-footer{
@@ -373,9 +372,12 @@ color:#4c4c4e;
 	.social-bar{
 		background-color:$ninth;
 		color:#fff;
+		-webkit-box-shadow: inset 0px 18px 60px 0px rgba(0,0,0,0.25);
+	-moz-box-shadow: inset 0px 18px 60px 0px rgba(0,0,0,0.25);
+	box-shadow: inset 0px 18px 60px 0px rgba(0,0,0,0.25);
 
 		a{
-			color:$sixth;
+			color:$tenth;
 		}
 	}
 }
@@ -873,11 +875,11 @@ padding:0;
 
 		.active a{
 			font-weight:900;
-			border-bottom: 3px solid $sixth;
+			border-bottom: 3px solid $seventh;
 		}
 
 		a:hover{
-			border-bottom: 3px solid $sixth;
+			border-bottom: 3px solid $seventh;
 		}
 
 		a{
@@ -885,7 +887,9 @@ padding:0;
 		}
 	}
 
-
+	a.navbar-brand.custom-logo-link {
+	    border-bottom: none;
+	}
 	#navFooter{
 
 		ul{
