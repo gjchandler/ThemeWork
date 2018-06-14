@@ -157,7 +157,13 @@ nav{
 
 
 }
+form input[type="text"]{
+height:40px;
+}
 
+label#input_2_2_5_label {
+    display: none;
+}
 
 .shadow-inner > div{
 	-webkit-box-shadow: inset 0px 0px 60px 0px rgba(0,0,0,0.75);
@@ -253,9 +259,9 @@ html body div .gform_wrapper input[type=submit]{
 .gform_widget{
 
 	h2{
-		font-size: 2rem;
+		font-size: 1.5rem;
 		font-weight: 700;
-		font-style: italic;
+
 	}
 }
 
@@ -390,6 +396,11 @@ color:#4c4c4e;
 	img{
 		padding-right:1rem;
 	}
+}
+
+
+.social-bar .fl-post-feed-header {
+    margin-bottom: 0px;
 }
 
 .popover-body{
@@ -746,23 +757,43 @@ label { color:white;
 li {list-style-type:none;
 }
 form input, form textarea, form button {
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
 	width: 100%;
 }
+
+form input[type="text"]{
+height:40px;
+}
+
+label#input_2_2_5_label {
+    display: none;
+}
+
+.gform_wrapper li.gfield.gfield_error, .gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning {
+    background-color: rgba(255,223,224,.25);
+    margin-bottom: 0px!important;
+    border-top: 0px solid #C89797;
+    border-bottom: 0px solid #C89797;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    box-sizing: border-box;}
+
 form input[type="text"], form input[type="email"] {
 	height: 40px;
 }
 form button, form input[type="submit"] {
-	background-color: #72af68;
-	color: #ffffff;
-	-o-transition: background-color 0.25s ease-in-out;
-	transition: background-color 0.25s ease-in-out;
-	-moz-transition: background-color 0.25s ease-in-out;
-	-webkit-transition: background-color 0.25s ease-in-out;
-	border: none;
-	padding: 10px 20px;
+	background-color: $tenth;
+color: $primary-alt;
+transition: background-color .25s ease-in-out;
+-moz-transition: background-color .25s ease-in-out;
+-webkit-transition: background-color .25s ease-in-out;
+border: none;
+padding: 10px 20px;
+font-size: 1.5em;
+font-weight: 600;
+text-transform: uppercase;
 }
 .gform_wrapper .gform_footer {
 	padding: 16px 0 10px;
